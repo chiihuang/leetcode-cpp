@@ -1,23 +1,19 @@
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        int s = nums.size();
-        // cout << s<< endl;
-        unordered_map<int, int> m;
-        int i = 0, j = 0;
-        for (i = 0; i < s; i++) {
-            m[nums[i]] = i;
-        }
-        for (i = 0; i < s; i++) {
-            if (m.find(target - nums[i]) != m.end() && m[target - nums[i]] != i){
-                // cout << target - nums[i] << endl;
-                j = m[target - nums[i]];
-                break;
+        vector<int> ret(2);
+        int len = nums.size();
+        const int MAX_VALUE = 50000;
+        int hash[2 * MAX_VALUE] = {0};
+        for(int i = 0; i < len; i++){
+            // found
+            if (hash[target - nums[i] + MAX_VALUE] != 0) {
+                ret[0] = i;
+                ret[1] = hash[target - nums[i] + MAX_VALUE] - 1;
+            } else {
+                hash[nums[i] + MAX_VALUE] = i + 1; // avoid skipping i=0
             }
         }
-        vector<int> ret(2);
-        ret[0] = i;
-        ret[1] = j;
         return ret;      
     }
 };
