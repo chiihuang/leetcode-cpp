@@ -3,4 +3,4 @@ My practices of Leetcode. Let's rock!
 
 ## Solution
 
-- [https://leetcode.com/problems/two-sum/](Algo-001) [https://discuss.leetcode.com/topic/54013/cpp-solution-beats-98-2](89% solution)
+- [Algo-001](https://leetcode.com/problems/two-sum/) [89% solution](https://discuss.leetcode.com/topic/54013/cpp-solution-beats-98-2)
