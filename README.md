@@ -9,3 +9,7 @@ My practices of Leetcode. Let's rock!
 - [Algo-007](https://leetcode.com/problems/reverse-integer/) : [Clean overflow dectection](https://discuss.leetcode.com/topic/6104/my-accepted-15-lines-of-code-for-java)
 - [Algo-010](https://leetcode.com/problems/regular-expression-matching/) : [DP](https://discuss.leetcode.com/topic/6183/my-concise-recursive-and-dp-solutions-with-full-explanation-in-c)
 - [Alog-011](https://leetcode.com/problems/container-with-most-water/) : [O N](https://discuss.leetcode.com/topic/3462/yet-another-way-to-see-what-happens-in-the-o-n-algorithm)
+
+## Reference
+
+- Binary Search: https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
