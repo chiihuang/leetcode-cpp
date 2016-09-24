@@ -13,3 +13,4 @@ My practices of Leetcode. Let's rock!
 ## Reference
 
 - Binary Search: https://www.topcoder.com/community/data-science/data-science-tutorials/binary-search/
+- KMP Algorithm: http://cs.stackexchange.com/q/10738
