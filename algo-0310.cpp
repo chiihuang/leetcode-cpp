@@ -50,4 +50,32 @@ public:
         }
         return {};
     }
+    vector<int> findMinHeightTrees(int n, vector<pair<int, int>>& edges) {
+        if (n == 1) return {0};
+        vector<set<int>> adj(n);
+        vector<int> leaves;
+        
+        for(auto i = 0; i < n; i++) adj[i] = {};
+        for(auto e : edges){
+            adj[e.first].insert(e.second);
+            adj[e.second].insert(e.first);
+        }
+
+        // find leafs
+        for(auto i = 0; i < n; i++)
+            if(adj[i].size() == 1) leaves.push_back(i);
+        
+        while(!leaves.empty()){
+            vector<int> next_leaves;
+            for(auto c : leaves){
+                for(auto j : adj[c]){
+                    adj[j].erase(c);
+                    if (adj[j].size() == 1) next_leaves.push_back(j);
+                }
+            }
+            if (next_leaves.size() == 0) return leaves;
+            leaves = next_leaves;
+        }
+        return {};
+    }
 };
