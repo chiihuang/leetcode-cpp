@@ -13,6 +13,7 @@ My practices of Leetcode. Let's rock!
 )
 - [Algo-106](https://leetcode.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal/) : [No HashMap Solution](https://discuss.leetcode.com/topic/3296/my-recursive-java-code-with-o-n-time-and-o-n-space/18)
 - [Algo-144](https://leetcode.com/problems/binary-tree-preorder-traversal/) : [Morris](https://discuss.leetcode.com/topic/14471/clear-c-solutions-iterative-recursive-and-morris-traversal-3-different-solutions)
+- [Alog-145](https://leetcode.com/problems/binary-tree-postorder-traversal/) : [Preorder/Inorder/Postorder Stack Iterative Solution](https://discuss.leetcode.com/topic/2919/my-accepted-code-with-explaination-does-anyone-have-a-better-idea/57)
 - [Algo-403](https://leetcode.com/problems/frog-jump/)
 
 ## Reference
